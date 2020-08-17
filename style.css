@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+:root {
+  --widtDesktop: 1440px;
+  --Cyan: hsl(180, 66%, 49%);
+
+  --white: white;
+  --DarkViolet: hsl(257, 27%, 26%);
+
+  --Red: hsl(0, 87%, 67%);
+
+  --gray: hsl(0, 0%, 75%);
+  --grayishviolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  width: var(--whiteDesktop);
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--grayishviolet);
+}
+
+a:hover {
+  color: var(--VeryDarkViolet);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+header nav {
+  height: 80px;
+  width: 100%;
+}
+
+nav a.singUp {
+  background-color: var(--Red);
+  padding: 5px 15px;
+  margin-left: 25px;
+  border-radius: 15px;
+  color: var(--white);
+}
+nav a.singUp:hover {
+  background-color: var(--Cyan);
+}
+
+.nav_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_item a {
+  margin-left: 1.3em;
+}
+
+section.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 0;
+}
+
+section .col {
+}
+
+section div .titular_titulo {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: var(--VeryDarkViolet);
+  margin: 0;
+}
+
+section div .titular_slogan {
+  font-size: 1rem;
+  color: var(--gray);
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+section div .titular_button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--Red);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+section div .titular_button:hover {
+  background-color: var(--Cyan);
+}
+section div.col-img {
+  position: relative;
+}
+section div .ilustration {
+  width: 550px;
+  position: absolute;
+  top: -50px;
+  right: -220px;
+  z-index: -1;
+}
+
+section.shorter {
+  margin-top: 80px;
+  width: 100%;
+  height: 80px;
+}
+
+section.shorter form.form {
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--VeryDarkBlue);
+  background-image: url(images/bg-shorten-desktop.svg);
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section.shorter form.form input.shorter_input {
+  height: 30%;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+section.shorter form.form button.shorter_button {
+  height: 60%;
+  width: 13%;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--Red);
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+section.shorter form.form button.shorter_button:hover {
+  background-color: var(--Cyan);
+}
+
+.f-aling-justify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
